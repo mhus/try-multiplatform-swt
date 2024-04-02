@@ -15,6 +15,15 @@ mvn package -Pmultiplatform
 java -jar multiplatform-swt-example/target/*.jar
 ```
 
+MacOS:
+
+``` bash
+git clone https://github.com/jendap/multiplatform-swt.git
+cd multiplatform-swt
+mvn package -Pmacosx-aarch64
+java -jar multiplatform-swt-example/target/*.jar
+```
+
 Usage
 -----
 

@@ -86,7 +86,7 @@
             </properties>
         </profile>
         <profile>
-            <id>macosx</id>
+            <id>macosx-x86</id>
             <activation>
                 <os>
                     <family>macosx</family>
@@ -95,6 +95,19 @@
             </activation>
             <properties>
                 <swt.artifactId>org.eclipse.swt.cocoa.macosx.x86_64</swt.artifactId>
+            </properties>
+        </profile>
+        <profile>
+            <id>macosx-aarch64</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+                <os>
+                    <family>macosx</family>
+                    <arch>aarch64</arch>
+                </os>
+            </activation>
+            <properties>
+                <swt.artifactId>org.eclipse.swt.cocoa.macosx.aarch64</swt.artifactId>
             </properties>
         </profile>
         <profile>

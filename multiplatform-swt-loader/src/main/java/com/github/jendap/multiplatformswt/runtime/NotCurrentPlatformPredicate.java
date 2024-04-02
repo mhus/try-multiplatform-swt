@@ -1,6 +1,6 @@
 package com.github.jendap.multiplatformswt.runtime;
 
-import org.springframework.boot.loader.archive.Archive;
+import org.springframework.boot.loader.launch.Archive;
 
 import java.util.function.Predicate;
 

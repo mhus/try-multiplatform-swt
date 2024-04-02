@@ -1,18 +1,13 @@
 package com.github.jendap.multiplatformswt.runtime;
 
-import org.springframework.boot.loader.archive.Archive;
+
+import org.springframework.boot.loader.launch.Archive;
 
 import java.util.List;
 
-public class MultiPlatformJarLauncher extends org.springframework.boot.loader.JarLauncher {
-    @Override
-    protected boolean isPostProcessingClassPathArchives() {
-        return true;
-    }
+public class MultiPlatformJarLauncher extends org.springframework.boot.loader.launch.JarLauncher {
 
-    @Override
-    protected void postProcessClassPathArchives(final List<Archive> archives) {
-        archives.removeIf(new NotCurrentPlatformPredicate());
+    public MultiPlatformJarLauncher() throws Exception {
     }
 
     public static void main(String[] args) throws Exception {

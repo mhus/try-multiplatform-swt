@@ -1,4 +1,4 @@
-package com.github.jendap.multiplatformswt.example;
+package com.janprach.simpleswt;
 
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.SWTError;
@@ -13,16 +13,10 @@ import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.MessageBox;
 import org.eclipse.swt.widgets.Shell;
 
-import java.util.logging.Logger;
+public class SimpleSwtMain {
 
-public class SwtHelloWorld {
-    private final static Logger LOGGER = Logger.getLogger(SwtHelloWorld.class.getName());
-
-    public static void main(final String[] args) {
-        LOGGER.info("Launching " + SwtHelloWorld.class.getSimpleName() + "...");
-        final SwtHelloWorld swtHelloWorld = new SwtHelloWorld();
-        swtHelloWorld.swtHelloWorld();
-        LOGGER.info("DONE");
+    public static void main(String[] args) {
+            new SimpleSwtMain().swtHtmlHelloWorld();
     }
 
     public void swtHelloWorld() {
@@ -70,4 +64,5 @@ public class SwtHelloWorld {
         }
         display.dispose();
     }
+
 }

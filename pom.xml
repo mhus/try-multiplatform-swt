@@ -20,6 +20,7 @@
     <modules>
         <module>multiplatform-swt-loader</module>
         <module>multiplatform-swt-example</module>
+        <module>simple-swt</module>
     </modules>
 
     <scm>
